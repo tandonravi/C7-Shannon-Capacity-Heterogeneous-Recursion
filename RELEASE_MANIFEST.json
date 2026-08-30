@@ -1,7 +1,7 @@
 {
   "package": "c7-heterogeneous",
-  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
-  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "python": "3.12.1 (main, Mar 11 2026, 12:17:56) [GCC 13.3.0]",
+  "platform": "Linux-6.8.0-1052-azure-x86_64-with-glibc2.39",
   "verification_commands": [
     "python3 verify_arithmetic.py",
     "python3 verify_certificates.py",
@@ -15,7 +15,7 @@
     ".gitignore": "314e07d79ebbc9cbe9c467dfd9d5a1c116c871125edac8a9bf7577d53e4ca8d5",
     "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
     "NOTICE": "359e841fec992d2e6df7c44e4e700f94fd1241673a1e10efe15b6dd1787e3a7d",
-    "README.md": "a21e6d2ff028074d36d00466075908b44950536a1f5fa07e6a92c6bebf1b69ea",
+    "README.md": "986e7845ec2a04dbd65bf3e450d31e788c759c0e7ebead05bf8df7d4599e9a8b",
     "data/base_c7.json": "2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b",
     "data/certificates.json": "c86f1db7687c3ed9e2a951d602671ce606f1b3830aa8ecf74b7ece069804ebd1",
     "data/paper_claims.json": "a1c85246f777296e81124113d88538a987eee93d712b08e8605b84d1b114677c",
