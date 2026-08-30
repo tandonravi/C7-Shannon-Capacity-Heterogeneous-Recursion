@@ -22,6 +22,7 @@ recommended; `pytest` is needed for the test suite.
 From the repository root, run:
 
 ```bash
+python3 -m pip install -r requirements.txt
 python3 verify_arithmetic.py
 python3 verify_certificates.py
 python3 verify_arithmetic.py --recomputed
@@ -126,14 +127,18 @@ verify_arithmetic.py
 verify_certificates.py
 ```
 
-## Provenance of the base data and BPZ rules
+## Related papers and provenance
 
-The base gadget and BPZ combining rules are derived from the BPZ Lean
-repository at commit
+This work builds directly on the following constructions:
 
-```text
-aa21eeb12b75b0413d3fa9fb4208b5d0bf2c4d65
-```
+- [S. C. Polak and A. Schrijver, “New lower bound on the Shannon capacity of \(C_7\) from circular graphs”](https://doi.org/10.1016/j.ipl.2018.11.006), *Information Processing Letters* 143, 37–40, 2019.
+- [N. Itty, C. D. Rosin, C. Carstensen, and D. Reichman, “Improved lower bounds for the Shannon capacity of odd cycles”](https://arxiv.org/abs/2607.21517), 2026.
+- [Y. Gao, “A Recursive Construction Improving the Lower Bound on the Shannon Capacity of \(C_7\)”](https://arxiv.org/abs/2607.27869), 2026.
+- [P. Buys, S. Polak, and J. Zuiddam, “Lean-verified lower bounds for the Shannon capacity of odd cycles”](https://arxiv.org/abs/2607.29681), 2026.
+- [BPZ Lean repository: `spectra-research/shannon-capacity-lean`](https://github.com/spectra-research/shannon-capacity-lean), with the source snapshot used here pinned to [commit `aa21eeb12b75b0413d3fa9fb4208b5d0bf2c4d65`](https://github.com/spectra-research/shannon-capacity-lean/tree/aa21eeb12b75b0413d3fa9fb4208b5d0bf2c4d65).
+
+The five-dimensional base gadget and BPZ combining rules used in this
+repository are transcribed from the pinned BPZ Lean development above.
 
 Verbatim snapshots of the relevant Lean files are included in `upstream/`.
 `tests/test_upstream_pinned.py` parses those snapshots and checks the JSON and
@@ -178,6 +183,7 @@ base data and rule tables retain their required attribution.
 
 ## Citation
 
-Please cite the accompanying paper when using this repository. The underlying
-base constructions and recursive frameworks build on work of Polak and
-Schrijver, Itty et al., Gao, and Buys, Polak, and Zuiddam.
+Please cite the accompanying paper when using this repository:
+
+**Ravi Tandon, “Strengthening Recursive Constructions for Zero-Error Shannon
+Capacity.”**
