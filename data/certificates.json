@@ -1,0 +1,125 @@
+{
+  "_comment": [
+    "The complete set of finite inputs to the constructions.  Everything else",
+    "in this repository is exact integer arithmetic derived from these.",
+    "Each entry records the count, the set it counts, and the neutral set it is",
+    "measured against.  All five have the shape |J \\ N(X0)|.",
+    "'sensitivity' is d(final bound)/d(value): how far the Theorem 2 bound moves",
+    "if the count is off by one.  C1 carries by far the most leverage.",
+    "Every value here is derived from data/base_c7.json by verify_certificates.py",
+    "(or live via `verify_arithmetic.py --recomputed`) and matches the manuscript.",
+    "The 'sensitivity' fields are approximate floating-point METADATA -- movement",
+    "of the final bound per unit change in the count -- not verification outputs;",
+    "all verification arithmetic in this repository is exact."
+  ],
+  "base_gadget": {
+    "profile": [
+      367,
+      8,
+      367,
+      322,
+      26,
+      19
+    ],
+    "order": [
+      "a",
+      "t",
+      "s",
+      "o",
+      "h",
+      "v"
+    ],
+    "dimension": 5,
+    "source": "BPZ, ShannonBounds/BaseC7Data.lean at aa21eeb12b75b0413d3fa9fb4208b5d0bf2c4d65",
+    "note": "Lean-verified upstream; strengthens Gao's (367,8,367,321,26,20)."
+  },
+  "certificates": {
+    "C1": {
+      "value": 27488,
+      "definition": "|J^+ \\ N(X_10^0)|",
+      "symbol": "q10",
+      "dimension": 10,
+      "counted_set": "J^+ = (T x T)(I_10) after the eight exchanges of Appendix B.1",
+      "reference_set": "X_10^0, the neutral part of X_10 = X_5 x X_5",
+      "upper_bound": 134753,
+      "sensitivity": 6.752e-10,
+      "note": "Highest-leverage certificate and the only one obtained by modifying an automorphic image through exchanges (C3 counts X_15, which is also not a pure automorphic image). |(T x T)(I_10) \\ N(X_10^0)| = 27480 before the exchanges.",
+      "status": "confirmed: derived from data/base_c7.json by verify_certificates.py",
+      "pre_exchange_value": 27480
+    },
+    "C2": {
+      "value": 12839823,
+      "definition": "|J_15 \\ N(X_15^{0,X})|",
+      "dimension": 15,
+      "counted_set": "J_15 = (T x T x T)(I_15)",
+      "reference_set": "X_15^{0,X}, neutral part of the common auxiliary set of the three ordinary 15-dim gadgets",
+      "upper_bound": 49495055,
+      "sensitivity": 3.117e-12,
+      "status": "confirmed: derived from data/base_c7.json by verify_certificates.py"
+    },
+    "C3": {
+      "value": 14045805,
+      "definition": "|X_15 \\ N(X_15^{0,X})|",
+      "dimension": 15,
+      "counted_set": "X_15, the auxiliary set of G_15^het",
+      "reference_set": "X_15^{0,X}",
+      "upper_bound": 49433743,
+      "sensitivity": 1.213e-12,
+      "cross_check": "|X_15 cap N(X_15^{0,X})| = 34038298 + 45 * m with m = |J^+ cap N(X_10 \\ X_10^0)|; C3 = 14045805 forces m = 29992.",
+      "status": "confirmed: derived from data/base_c7.json by verify_certificates.py"
+    },
+    "C4": {
+      "value": 841760069965664,
+      "definition": "|J_30^{++} \\ N(X_30^{0,L})|",
+      "symbol": "q30++",
+      "dimension": 30,
+      "counted_set": "J_30^{++} = T^{x6}(I_30^{++}), I_30^{++} the main code of Gao(G_15^het, G_15^het)",
+      "reference_set": "X_30^{0,L}, neutral part of G_30^L",
+      "upper_bound": 2455726444728097,
+      "sensitivity": 2.379e-20,
+      "component_decomposition": {
+        "_comment": "Appendix B.3 / Table 5. All seven contributions are reproduced exactly by verify_certificates.py, as are the seven component sizes, |I_30^++| = 2455726444728097 and |X_30^{0,L}| = 1446768903083453.",
+        "B15 x B15": 827599599610592,
+        "R15 x X15^0": 6686131598464,
+        "P15^H x X15^H": 194829147616,
+        "P15^V x X15^V": 194829147616,
+        "X15^0 x R15": 6694533241984,
+        "X15^H x P15^V": 195073609696,
+        "X15^V x P15^H": 195073609696
+      },
+      "status": "confirmed: derived from data/base_c7.json by verify_certificates.py",
+      "size_I30pp": 2455726444728097,
+      "size_X30_0L": 1446768903083453
+    },
+    "q15": {
+      "value": 12872271,
+      "definition": "|J_15 \\ N(X_15^0)|",
+      "dimension": 15,
+      "counted_set": "J_15 = (T x T x T)(I_15)",
+      "reference_set": "X_15^0, the neutral part of X_15 (the HETEROGENEOUS auxiliary set)",
+      "upper_bound": 49495055,
+      "used_by": "Section 3.1 warmup only; not needed for Theorem 2",
+      "note": "Distinct from C2: different reference set. Both are counts of the same J_15.",
+      "status": "confirmed: derived from data/base_c7.json by verify_certificates.py"
+    }
+  },
+  "derived_counts": {
+    "_comment": [
+      "Trivial-q lemma: if X is independent and X^0 is a subset of X, then",
+      "X cap N(X^0) = X^0 exactly, so |X \\ N(X^0)| = s - o with no computation.",
+      "These are the codebook choices that need no ledger entry."
+    ],
+    "X_10 against X_10^0": {
+      "value": 28980,
+      "formula": "s10 - o10 = 134689 - 105709"
+    },
+    "X_15^X against X_15^{0,X}": {
+      "value": 14088465,
+      "formula": "s - o = 49430863 - 35342398"
+    }
+  },
+  "automorphism_T": {
+    "map": "T(w0,w1,w2,w3,w4) = (2 - w1, w3, w0, 2 - w2, w4) mod 7",
+    "note": "Coordinate permutation (1,3,0,2,4) composed with the reflection w -> 2-w on two coordinates; an automorphism of C_7^{box 5}."
+  }
+}

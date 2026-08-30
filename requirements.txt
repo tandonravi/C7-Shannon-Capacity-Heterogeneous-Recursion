@@ -1,0 +1,4 @@
+# Runtime needs the standard library only.  pytest is required for the tests.
+# Exact pin for reproducible test environments; pytest 8-9 is expected
+# to work if this constraint is relaxed.
+pytest==8.3.3

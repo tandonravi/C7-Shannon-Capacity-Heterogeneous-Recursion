@@ -1,0 +1,6 @@
+# Git blob IDs (git hash-object) of the bundled snapshots, for offline
+# comparison against the upstream repository at the pinned commit
+# aa21eeb12b75b0413d3fa9fb4208b5d0bf2c4d65.
+bfa1882faaafd1c9f3b9d33cdefe3c302a8c860a  BaseC7Data.lean
+b7a6a64241b5d113bd438368de9a7b0e790cb039  Substitutions.lean
+5fb18990f81638f7b075edd45fe6b0231f14a48d  TerminalCodes.lean
