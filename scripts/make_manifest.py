@@ -30,7 +30,7 @@ def main() -> None:
         and path.name != "RELEASE_MANIFEST.json"
     )
     manifest = {
-        "package": "c7-heterogeneous",
+        "package": "C7-Shannon-Capacity-Heterogeneous-Recursion",
         "python": sys.version,
         "platform": platform.platform(),
         "verification_commands": [

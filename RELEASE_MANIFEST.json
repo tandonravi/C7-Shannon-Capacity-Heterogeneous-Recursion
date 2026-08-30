@@ -1,5 +1,5 @@
 {
-  "package": "c7-heterogeneous",
+  "package": "C7-Shannon-Capacity-Heterogeneous-Recursion",
   "python": "3.12.1 (main, Mar 11 2026, 12:17:56) [GCC 13.3.0]",
   "platform": "Linux-6.8.0-1052-azure-x86_64-with-glibc2.39",
   "verification_commands": [
@@ -20,7 +20,7 @@
     "data/certificates.json": "c86f1db7687c3ed9e2a951d602671ce606f1b3830aa8ecf74b7ece069804ebd1",
     "data/paper_claims.json": "a1c85246f777296e81124113d88538a987eee93d712b08e8605b84d1b114677c",
     "requirements.txt": "1469e091c5d308853ab94f5b8c3befc952f5d35e0418ee607896867eaccb089f",
-    "scripts/make_manifest.py": "851bbbbc36ac138be5c463d509d7b9d5ac149208ee85e855c16fc3d7739720d9",
+    "scripts/make_manifest.py": "d33d4cbed63b29cd3fd98262cd851e160b1670679aae49ca69631dcca57fffa9",
     "scripts/verify_upstream_online.py": "e65b4c1aa0307161316015836228b751482d87025bb5fb1167579793e920984d",
     "shannon/__init__.py": "6f478dacd2650af182e0debb33a339b22ebd09208de42e1ef190136a6fdce31d",
     "shannon/bpz.py": "ded77004630f8a53feaddf87dfab83cc1d93ddb65292367c7d27c4a8dc0f3715",
