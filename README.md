@@ -3,6 +3,8 @@
 Companion verification code and finite certificates for the paper
 **“Strengthening Recursive Constructions for Zero-Error Shannon Capacity.”**
 
+Paper: [arXiv:2608.30273](https://arxiv.org/abs/2608.30273)
+
 The repository verifies the construction of an independent set in
 \(C_7^{\boxtimes 500}\) that yields
 
@@ -186,4 +188,5 @@ base data and rule tables retain their required attribution.
 Please cite the accompanying paper when using this repository:
 
 **Ravi Tandon, “Strengthening Recursive Constructions for Zero-Error Shannon
-Capacity.”**
+Capacity.”**  
+[arXiv:2608.30273](https://arxiv.org/abs/2608.30273), 2026.
